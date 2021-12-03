@@ -1,0 +1,39 @@
+API - Application Programming Interface
+
+1. Governs the access point(s) for the server
+2. Communication between services
+3. DB connection
+
+It`s a middleware of the system. Logic is in an api.
+Flask and Django - sync frameworks, FastApi - async
+
+Sync means:
+Get requests in order and send responses in order. If request has not been processed yet,
+next request couldn`t be accepted
+|-> Request 1 -> Response 1 ->
+|<---------------------------|
+|
+|
+|-> Request 2 -> Response 2 ->
+|<---------------------------|
+
+
+Async means:
+Get requests always. Its faster then sync frameworks.
+|-> Request 1 ->
+|<-------------|
+|-> Request 2 ->
+|<-------------|
+
+|<--- Response 1
+|<--- Response 2
+
+JSON - JavaScript Object Notation
+Api <- JSON -> Client
+{ key: value, ... }
+
+HTTP request:
+Type - GET, POST, PUT, DELETE, ...
+Headers
+Payload (JSON or another)
+
